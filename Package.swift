@@ -24,7 +24,7 @@ let package = Package(
             name: "SwiftPackageDemo",
             dependencies: ["Reachability"]),
         .binaryTarget(name: "SwiftPackageDemoBinay",
-                      url: "",
+                      url: "https://github.com/l0stgnrtn/SwiftPackageDemo/binary/SwiftPackageDemo.zip",
                       checksum: "1bddec8f8e54baccbce97c736a80adffbb60da322b6a3636622631e9fd6b7da4")
     ]
 )
