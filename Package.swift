@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "SwiftPackageDemo",
-            targets: ["SwiftPackageDemo","SwiftPackageDemoBinay"]),
+            targets: ["SwiftPackageDemo"]),
     ],
     dependencies: [
         .package(name: "Reachability", url: "https://github.com/ashleymills/Reachability.swift", .exact("5.1.0")
@@ -20,11 +20,8 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "SwiftPackageDemo",
-            dependencies: ["Reachability"]),
-        .binaryTarget(name: "SwiftPackageDemoBinay",
+        .binaryTarget(name: "SwiftPackageDemo",
                       url: "https://github.com/l0stgnrtn/SwiftPackageDemo/raw/main/binary/SwiftPackageDemo.xcframework.zip",
-                      checksum: "1bddec8f8e54baccbce97c736a80adffbb60da322b6a3636622631e9fd6b7da4")
+                      checksum: "e3de32e5108de67e6c75eb9235f29b6c5952e45d60b270a5b08f6265216548c3")
     ]
 )

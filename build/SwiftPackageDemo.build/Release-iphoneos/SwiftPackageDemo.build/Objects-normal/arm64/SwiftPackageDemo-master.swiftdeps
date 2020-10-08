@@ -1,5 +1,5 @@
 version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
 options: "9d63e6eb9ce10c2c658e65456ce97349"
-build_time: [1602170109, 801042000]
+build_time: [1602174905, 126467000]
 inputs:
   "/Users/nikitamosiakov/Developer/SwiftPackageDemo/Sources/SwiftPackageDemo/SwiftPackageDemo.swift": [9223372036, 854775807]
