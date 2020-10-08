@@ -6,16 +6,15 @@ import PackageDescription
 let package = Package(
     name: "SwiftPackageDemo",
     platforms: [
-             .iOS(.v13)
+             .iOS(.v14)
     ],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "SwiftPackageDemo",
-            targets: ["SwiftPackageDemo"]),
+            targets: ["SwiftPackageDemo","SwiftPackageDemoBinay"]),
     ],
     dependencies: [
-        .package(name: "KeychainSwift", url: "https://github.com/evgenyneu/keychain-swift", .exact("19.0.0")
+        .package(name: "Reachability", url: "https://github.com/ashleymills/Reachability.swift", .exact("5.1.0")
 ),
     ],
     targets: [
@@ -23,6 +22,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "SwiftPackageDemo",
-            dependencies: ["KeychainSwift"]),
+            dependencies: ["Reachability"]),
+        .binaryTarget(name: "SwiftPackageDemoBinay",
+                      url: "",
+                      checksum: "1bddec8f8e54baccbce97c736a80adffbb60da322b6a3636622631e9fd6b7da4")
     ]
 )

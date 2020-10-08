@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
+options: "a59042be6caf5a676ae2733ff4549577"
+build_time: [1602170108, 404535000]
+inputs:
+  "/Users/nikitamosiakov/Developer/SwiftPackageDemo/.build/checkouts/Reachability.swift/Sources/Reachability.swift": [9223372036, 854775807]

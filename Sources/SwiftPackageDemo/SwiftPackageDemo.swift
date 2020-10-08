@@ -1,9 +1,9 @@
-import KeychainSwift
+import Reachability
 
 public struct SwiftPackageDemo {
     public var SwiftPackageDemo_text = "Hello, World!"
     
     public static func foo() {
-        let _ = KeychainSwift()
+        let _ = try? Reachability()
     }
 }
